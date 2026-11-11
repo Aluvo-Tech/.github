@@ -1,0 +1,35 @@
+name: Proponer una mejora
+description: Comparte una necesidad y una propuesta para resolverla.
+title: "[Mejora]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Necesidad o problema
+      description: Explica qué quieres conseguir, quién lo necesita y qué dificultad existe hoy.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solución propuesta
+      description: Describe el comportamiento deseado y un ejemplo de uso.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Cómo comprobaríamos que funciona
+      description: Propón resultados observables o criterios de aceptación.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Otras formas de resolver la necesidad y sus ventajas o limitaciones.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Referencias, bocetos, dependencias o restricciones que ayuden a valorar la propuesta.

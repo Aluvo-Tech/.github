@@ -1,0 +1,52 @@
+name: Reportar un error
+description: Ayúdanos a entender y reproducir un comportamiento inesperado.
+title: "[Error]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe el problema con un ejemplo concreto. Elimina secretos y datos personales antes de compartir registros, capturas o archivos.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Qué ocurre
+      description: Explica el problema y cómo afecta al uso del proyecto.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos para reproducirlo
+      description: Incluye un ejemplo mínimo y los pasos que llevan al error.
+      placeholder: |
+        1. Configurar...
+        2. Ejecutar...
+        3. Observar...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+      description: Qué debería suceder al seguir esos pasos.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado observado
+      description: Incluye el mensaje de error o una captura si ayuda a entenderlo.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Entorno y versiones
+      description: Indica la versión del proyecto y, según corresponda, sistema operativo, navegador, runtime, modelo de IA o servicio utilizado.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto adicional
+      description: Registros sin datos sensibles, frecuencia del error o soluciones temporales que hayas probado.
